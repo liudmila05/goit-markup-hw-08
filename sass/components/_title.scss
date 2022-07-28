@@ -1,0 +1,5 @@
+.features__title,
+.portfolio__title,
+.checkbox-form__input {
+    @extend %visually-hidden;
+}

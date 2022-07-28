@@ -1,0 +1,38 @@
+.page-header__container-links {
+    display: flex;
+    margin-left: auto;
+}
+
+.page-header__items {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.page-header__link {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--accent-color);
+    }
+}
+
+.page-header__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

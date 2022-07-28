@@ -1,0 +1,19 @@
+.page-header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.page-header {
+    border-bottom: 1px solid var(--border-header-color);
+    position: relative;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__list-nav,
+.page-header__container-links {
+    @extend %list;
+}
