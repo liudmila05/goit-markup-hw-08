@@ -1,7 +1,4 @@
 .page-header__nav {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 306px;
-    }
 
     @media screen and (min-width: 767px) {
         margin-left: 88px;
@@ -36,12 +33,6 @@
     @extend %list;
 }
 
-.page-header__container-links {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 64px;
-    }
-}
-
 .header__social-list {
     display: flex;
     
@@ -65,3 +56,17 @@
     text-decoration: none;
     color: var(--accent-color);
 }
+
+// .page-header__icon {
+//     @media screen and (max-width: 1199px) {
+//         width: 14px;
+//         height: 10px;
+//     }  
+// }
+
+// .page-header__icon-mobile {
+//     @media screen and (max-width: 1199px) {
+//         width: 10px;
+//         height: 14px;
+//     } 
+// }

@@ -132,7 +132,20 @@ img {
   }
 }
 .mobile-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
 }
 
 .section {
@@ -470,26 +483,34 @@ img {
     display: block;
     fill: currentColor;
     margin-right: 8px;
-    width: 14px;
-    height: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-header__icon {
     margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .page-header__icon--size-convert {
+    width: 14x;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__icon--size-convert {
     width: 16px;
     height: 12px;
   }
 }
-@media screen and (min-width: 768px) {
-  .page-header__icon--size {
+@media screen and (min-width: 1200px) {
+  .page-header__icon--size-mobile {
     width: 10px;
     height: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .page-header__icon--size {
-    width: 12px;
+  .page-header__icon--size-mobile {
+    width: 10px;
     height: 16px;
   }
 }
@@ -1103,11 +1124,6 @@ img {
   fill: var(--white-color);
 }
 
-@media screen and (max-width: 767px) {
-  .page-header__nav {
-    margin-bottom: 306px;
-  }
-}
 @media screen and (min-width: 767px) {
   .page-header__nav {
     margin-left: 88px;
@@ -1141,12 +1157,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .page-header__container-links {
-    margin-bottom: 64px;
   }
 }
 
@@ -1302,14 +1312,19 @@ img {
 }
 
 .portfolio-gallery__desc {
-  padding: 20px 20px;
+  padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
 }
 @media screen and (min-width: 768px) {
   .portfolio-gallery__desc {
-    padding: 18px 18px;
+    padding: 20px 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-gallery__desc--height {
+    padding-bottom: 56px;
   }
 }
 
@@ -1330,7 +1345,6 @@ img {
 .portfolio-gallery__item {
   display: inline-block;
   width: 450px;
-  margin-bottom: 30px;
   background: var(--white-color);
 }
 @media screen and (min-width: 768px) {

@@ -69,24 +69,30 @@
         display: block;
         fill: currentColor;
         margin-right: 8px;
-        width: 14px;
-        height: 10px;
     }
 
     @media screen and (min-width: 1200px) {
         margin-right: 10px;
-        width: 16px;
-        height: 12px;
     }
 
-    &--size {
-        @media screen and (min-width: 768px) {
+    &--size-convert {
+        @media screen and (max-width: 1199px) {
+            width: 14x;
+            height: 10px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 16px;
+            height: 12px;
+        }
+    }
+    
+    &--size-mobile {
+        @media screen and (min-width: 1200px) {
             width: 10px;
             height: 14px;
         }
-
         @media screen and (min-width: 1200px) {
-            width: 12px;
+            width: 10px;
             height: 16px;
         }
     }
