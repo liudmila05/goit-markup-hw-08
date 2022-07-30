@@ -1,0 +1,30 @@
+.header__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 990;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &:hover .icon-menu-close,
+    &:hover .icon-menu-open {
+        fill: var(--accent-color);
+    }
+}
+
+.header__button .icon-menu-close {
+    display: none;
+}
+
+.header__button.is-open .icon-menu-close {
+    display: block;
+}
+
+.header__button.is-open .icon-menu-open {
+    display: none;
+}
